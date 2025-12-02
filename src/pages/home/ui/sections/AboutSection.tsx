@@ -11,7 +11,7 @@ const sectionVariants = {
 export function AboutSection({ t }: { t: HomeLocale }) {
   return (
     <motion.section
-      className="flex min-h-screen items-center justify-center px-4"
+      className="flex min-h-[80vh] items-center justify-center px-4 md:min-h-screen"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.4 }}
@@ -29,3 +29,7 @@ export function AboutSection({ t }: { t: HomeLocale }) {
     </motion.section>
   );
 }
+
+// Фиктивный default export для совместимости с pages-валидатором Next.js.
+const EmptyAboutSectionPage = () => null;
+export default EmptyAboutSectionPage;

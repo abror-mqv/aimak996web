@@ -27,3 +27,8 @@ export function HomePage({ initialCities }: HomePageProps) {
     </main>
   );
 }
+
+// Фиктивный default export, чтобы удовлетворить Next.js pages-валидатор.
+// Реальная страница используется через именованный экспорт HomePage в App Router.
+const EmptyHomePage = () => null;
+export default EmptyHomePage;

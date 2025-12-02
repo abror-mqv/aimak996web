@@ -12,23 +12,21 @@ const sectionVariants = {
 export function HeroSection({ t }: { t: HomeLocale }) {
   return (
     <motion.section
-      className="flex min-h-screen items-center justify-center px-4"
+      className="flex min-h-[60vh] items-center justify-center px-4 md:min-h-screen"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }}
       variants={sectionVariants}
       transition={{ duration: 0.6 }}
     >
-      <div className="max-w-3xl text-center flex items-center flex-col">
-       
-          <Image
-                      src="/assets/mountains.svg"
-                      alt="Aimak 996"
-                      width={96}
-                      height={36}
-                      className="h-36 w-96 object-contain"
-                    />
-        
+      <div className="flex max-w-3xl flex-col items-center text-center">
+        <Image
+          src="/assets/mountains.svg"
+          alt="Aimak 996"
+          width={96}
+          height={36}
+          className="mb-4 h-24 w-48 object-contain md:h-36 md:w-96"
+        />
         <h1 className="mb-4 text-balance text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl lg:text-5xl">
           {t.heroTitle}
         </h1>
@@ -39,3 +37,7 @@ export function HeroSection({ t }: { t: HomeLocale }) {
     </motion.section>
   );
 }
+
+// Фиктивный default export для совместимости с pages-валидатором Next.js.
+const EmptyHeroSectionPage = () => null;
+export default EmptyHeroSectionPage;

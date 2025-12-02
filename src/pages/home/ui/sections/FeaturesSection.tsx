@@ -31,3 +31,7 @@ export function FeaturesSection({ t }: { t: HomeLocale }) {
     </motion.section>
   );
 }
+
+// Фиктивный default export для совместимости с pages-валидатором Next.js.
+const EmptyFeaturesSectionPage = () => null;
+export default EmptyFeaturesSectionPage;

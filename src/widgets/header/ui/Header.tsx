@@ -36,7 +36,7 @@ export function Header() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.4 }}
     >
-      <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4">
+      <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-3 sm:px-4">
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/assets/aimak_logo.png"
@@ -47,8 +47,8 @@ export function Header() {
           />
         </Link>
 
-        <div className="flex items-center gap-6">
-          <nav className="hidden items-center gap-4 text-xs text-slate-600 sm:flex">
+        <div className="flex items-center gap-3 sm:gap-6">
+          <nav className="flex items-center gap-3 text-[11px] text-slate-600">
             
             <div className="flex items-center gap-3">
               <Link

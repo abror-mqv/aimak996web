@@ -88,3 +88,7 @@ export function PrivacyPage({ appTitle, cityName }: PrivacyPageProps) {
     </main>
   );
 }
+
+// Фиктивный default export для совместимости с pages-валидатором Next.js.
+const EmptyPrivacyPage = () => null;
+export default EmptyPrivacyPage;

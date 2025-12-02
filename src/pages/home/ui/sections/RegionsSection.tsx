@@ -120,3 +120,7 @@ export function RegionsSection({ t, cities }: RegionsSectionProps) {
     </motion.section>
   );
 }
+
+// Фиктивный default export для совместимости с pages-валидатором Next.js.
+const EmptyRegionsSectionPage = () => null;
+export default EmptyRegionsSectionPage;

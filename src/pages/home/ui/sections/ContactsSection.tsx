@@ -57,3 +57,7 @@ export function ContactsSection({ t }: { t: HomeLocale }) {
     </motion.section>
   );
 }
+
+// Фиктивный default export для совместимости с pages-валидатором Next.js.
+const EmptyContactsSectionPage = () => null;
+export default EmptyContactsSectionPage;
